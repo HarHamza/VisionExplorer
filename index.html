@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+/* your carousel styles */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+.carousel img {
+  max-width: 800px;
+  border-radius: 10px;
+}
+.carousel iframe {
+  min-width: 800px;
+  border-radius: 10px;
+}
+.carousel button {
+  background: var(--onyx);
+  border: none;
+  color: var(--white-2);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+</style>
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/logo_white.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Vision Explorer</h1>
+
+          <p class="title">Immersive AR/VR Solutions </p>
+			<p class="title">For Education, Industry & Gaming
+</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">visionexplorerma@gmail.com
+</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+212652271898</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Facebook</p>
+
+              <address>XRVisionExplorer</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">instagram</p>
+
+              <address>XRVisionExplorer</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>project-fsf</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>project-gti</button>
+          </li>
+<!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+-->
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About Us</h2>
+        </header>
+
+        <section class="about-text">
+          <p align="justify">
+            <strong>Vision Explorer</strong> is an innovative Moroccan startup delivering cutting-edge Augmented Reality <b>(AR)</b> and Virtual Reality <b>(VR)</b> solutions. Our services span three main offerings: Immersive Virtual Tours, Virtual Training Platforms, and Simulation & Visualization Tools. These solutions serve sectors such as education, gaming, and industry
+          </p>
+
+          <p align="justify">
+            <b>Vision Explorer</b> provides interactive, AI-powered VR/AR training solutions tailored for education, healthcare, corporate training, real estate, and tourism. Unlike traditional methods or passive 360° scans, our platform offers realistic, fully immersive simulations, allowing users to learn, explore, and train in an engaging and dynamic virtual environment.
+		</p>
+		
+		<p align="justify">
+			With customizable modules, industry-specific solutions, and real-time interactivity, VisionExplorer helps institutions and businesses enhance learning outcomes, reduce costs, and improve training effectiveness, bridging the gap between theoretical knowledge and practical application
+          </p>
+        </section>
+
+
+        <!--
+          - What We Offer (Services & Products)
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What We Offer (Services & Products)</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Immersive Virtual Tours</h4>
+
+                <p class="service-item-text">
+                  3D walkthroughs of spaces like museums, universities, and real estate properties.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI-Powered Virtual Training Platforms</h4>
+
+                <p class="service-item-text">
+                  Customizable training modules for hands-on learning in fields like healthcare, manufacturing, and education.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Simulation & Visualization Tools</h4>
+
+                <p class="service-item-text">
+                 Digital twins and simulations for planning, monitoring, and operational efficiency.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI-Enhanced Experiences</h4>
+
+                <p class="service-item-text">
+                  Integration of artificial intelligence for adaptive learning, intelligent simulations, and interactive user guidance.
+                </p>
+              </div>
+
+            </li>
+			<li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">3D Modeling & Animation</h4>
+
+                <p class="service-item-text">
+                  Custom 3D assets, animations, and environments tailored to client needs.
+                </p>
+              </div>
+
+            </li>
+			<li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cross-Platform Game & App Development</h4>
+
+                <p class="service-item-text">
+                  Development of immersive applications and serious games for mobile, desktop, and web.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+    <section class="service">
+
+          <h3 class="h3 service-title">Who We Serve</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Education & EdTech</h4>
+
+                <p class="service-item-text">
+                  We help schools, universities, and training centers create immersive learning experiences using VR/AR — from virtual classrooms to hands-on simulations. Our platforms boost engagement, retention, and accessibility for students of all levels.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Healthcare & Medical Training</h4>
+
+                <p class="service-item-text">
+                  We design VR training simulations for nurses, doctors, and students — enabling safe, repeatable practice for procedures and emergency scenarios. Our solutions improve competence, confidence, and reduce real-world risk.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Manufacturing & Industry 4.0</h4>
+
+                <p class="service-item-text">
+                 We simulate equipment, workflows, and environments for industrial training, maintenance, or safety drills. Digital twins and AR-guided apps reduce downtime, improve planning, and empower operators.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cultural & Tourism Institutions</h4>
+
+                <p class="service-item-text">
+                  Museums and tourism boards use our 3D tours to reach global audiences and enhance on-site visits with interactive content. From historical reconstructions to AI tour guides, we make culture immersive.
+                </p>
+              </div>
+
+            </li>
+			<li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Real Estate & Architecture</h4>
+
+                <p class="service-item-text">
+                  We build real-time 3D walkthroughs and AR visualizations for homes, offices, and urban planning. Clients and stakeholders can explore spaces remotely before construction begins.
+                </p>
+              </div>
+
+            </li>
+			<li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"> Gaming & Creative Studios</h4>
+
+                <p class="service-item-text">
+                  We collaborate on serious games, educational content, or AR-enhanced experiences across platforms. From prototyping to full development, we support studios and creators at every stage.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Technologies We Use</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AR/VR Development</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Unity, Unreal Engine, WebXR.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AI & Smart Systems</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    TensorFlow, OpenAI APIs, Chatbots, NLP.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>3D Asset Creation</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Blender, Substance Painter, Photogrammetry.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Game & Simulation Engines</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Unity, Godot, Photon Fusion
+                  </p>
+                </div>
+
+              </div>
+            </li>
+			            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Web & Backend</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Firebase, Supabase, WebGL, Three.js.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Sponsors</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/UM6P_1337.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/UM6P_logo.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/startgate_logo.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/LOGO_GTI.png" alt="client logo">
+              </a>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+    <article class="resume" data-page="project-fsf">
+        <header>
+			<h2 class="h2 article-title">FEZ Smart Factory</h2>
+		</header>
+		<!-- Project Description -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="book-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Project Description</h3>
+			</div>
+			<ol class="timeline-list">
+			  <li class="timeline-item">
+				<h4 class="h4 timeline-item-title">Overview</h4>
+				<p class="timeline-text">
+				  Immersive experience to visit a model factory and understand Industry 4.0. Includes interactive, game-based virtual training.
+				</p>
+			  </li>
+			</ol>
+		  </section>
+  
+		<!-- Features / Value -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="book-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Features</h3>
+			</div>
+			<ol class="timeline-list">
+			  <li class="timeline-item">
+				<h4 class="h4 timeline-item-title">Interactive Navigation</h4>
+				<p class="timeline-text">Users can walk through the 3D factory model.</p>
+			  </li>
+			  <li class="timeline-item">
+				<h4 class="h4 timeline-item-title">Assembly Simulation</h4>
+				<p class="timeline-text">Follow the vehicle assembly process and operate machinery.</p>
+			  </li>
+			  <li class="timeline-item">
+				<h4 class="h4 timeline-item-title">Doorhandling Machine</h4>
+				<p class="timeline-text">Learn to operate the door mounting machine virtually.</p>
+			  </li>
+			</ol>
+		  </section>
+		
+		<!-- Technologies Used -->
+		<section class="skill">
+			<h3 class="h3 skills-title">Technologies Used</h3>
+			<ul class="skills-list content-card">
+			  <li class="skills-item">
+				<div class="title-wrapper">
+				  <h5 class="h5">Unity VR Development</h5>
+				  <data value="95">95%</data>
+				</div>
+				<div class="skill-progress-bg">
+				  <div class="skill-progress-fill" style="width: 95%;"></div>
+				</div>
+			  </li>
+			  <li class="skills-item">
+				<div class="title-wrapper">
+				  <h5 class="h5">3D Modeling (Blender)</h5>
+				  <data value="85">85%</data>
+				</div>
+				<div class="skill-progress-bg">
+				  <div class="skill-progress-fill" style="width: 85%;"></div>
+				</div>
+			  </li>
+			  <li class="skills-item">
+				<div class="title-wrapper">
+				  <h5 class="h5">Lighting & Interactivity</h5>
+				  <data value="90">90%</data>
+				</div>
+				<div class="skill-progress-bg">
+				  <div class="skill-progress-fill" style="width: 90%;"></div>
+				</div>
+			  </li>
+			</ul>
+		  </section>
+    
+		<!-- Images Carousel -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="images-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Gallery</h3>
+			</div>
+			<div class="carousel">
+			  <button onclick="scrollCarousel(-1, 'image-carousel-fez')">&#10094;</button>
+			  <div id="image-carousel-fez" class="carousel-track">
+				<img src="./assets/images/FSF/Test001.png" alt="Scene 1">
+				<img src="./assets/images/FSF/Test002.png" alt="Scene 2">
+				<img src="./assets/images/FSF/Test003.png" alt="Scene 3">
+				<img src="./assets/images/FSF/Test004.png" alt="Scene 4">
+				<img src="./assets/images/FSF/Test005.png" alt="Scene 5">
+				<img src="./assets/images/FSF/Test006.png" alt="Scene 6">
+				<img src="./assets/images/FSF/Test007.png" alt="Scene 7">
+				<img src="./assets/images/FSF/Test008.png" alt="Scene 8">
+				<img src="./assets/images/FSF/Test009.png" alt="Scene 9">
+				<img src="./assets/images/FSF/Test010.png" alt="Scene 10">
+				<img src="./assets/images/FSF/Test011.png" alt="Scene 11">
+				<img src="./assets/images/FSF/Test012.png" alt="Scene 12">
+				<img src="./assets/images/FSF/Test013.png" alt="Scene 13">
+			  </div>
+			  <button onclick="scrollCarousel(1, 'image-carousel-fez')">&#10095;</button>
+			</div>
+		  </section>
+    
+		<!-- Videos Carousel -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="videocam-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Video Demos</h3>
+			</div>
+			<div class="carousel">
+			  <button onclick="scrollCarousel(-1, 'video-carousel-fez')">&#10094;</button>
+			  <div id="video-carousel-fez" class="carousel-track">
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/UF1R8x5keP4
+		" frameborder="0" allowfullscreen></iframe>
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/1l7d_jYQPGU" frameborder="0" allowfullscreen></iframe>
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/YswNSKE2ZYc
+		" frameborder="0" allowfullscreen></iframe>
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/UlhqWh-o-0s
+		" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			  <button onclick="scrollCarousel(1, 'video-carousel-fez')">&#10095;</button>
+			</div>
+		  </section>
+	</article>
+
+          
+
+    </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="project-gti">
+
+        <header>
+          <h2 class="h2 article-title">GTI VR Tour</h2>
+        </header>
+		
+		<!-- Project Description -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="book-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Project Description</h3>
+			</div>
+			<ol class="timeline-list">
+			  <li class="timeline-item">
+				<h4 class="h4 timeline-item-title">Overview</h4>
+				<p class="timeline-text">
+				            Virtual exploration of the GTI Department at UM6P University, allowing users to navigate, interact, and learn.
+
+				</p>
+			  </li>
+			</ol>
+		  </section>
+  
+		<!-- Features / Value -->
+		  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Features</h3>
+    </div>
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Campus Tour</h4>
+        <p class="timeline-text">Explore labs, hallways, and rooms in full 3D.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Interactive Equipment Info</h4>
+        <p class="timeline-text">View equipment and access detailed information on use and research.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Program & Staff Guide</h4>
+        <p class="timeline-text">Learn about academic programs and instructors in immersive formats.</p>
+      </li>
+    </ol>
+  </section>
+		<!-- Technologies Used -->
+		<section class="skill">
+    <h3 class="h3 skills-title">Technologies Used</h3>
+    <ul class="skills-list content-card">
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Unity Engine</h5>
+          <data value="90">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">UI/UX VR Interaction</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Environment Design</h5>
+          <data value="88">88%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 88%;"></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+    
+		<!-- Images Carousel -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="images-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Gallery</h3>
+			</div>
+			<div class="carousel">
+			  <button onclick="scrollCarousel(-1, 'image-carousel-fez')">&#10094;</button>
+			  <div id="image-carousel-fez" class="carousel-track">
+				<img src="./assets/images/GTI/1.png" alt="Scene 1">
+				<img src="./assets/images/GTI/2.png" alt="Scene 2">
+				<img src="./assets/images/GTI/3.png" alt="Scene 3">
+				<img src="./assets/images/GTI/4.png" alt="Scene 4">
+				<img src="./assets/images/GTI/5.png" alt="Scene 5">
+				<img src="./assets/images/GTI/6.png" alt="Scene 6">
+			  </div>
+			  <button onclick="scrollCarousel(1, 'image-carousel-fez')">&#10095;</button>
+			</div>
+		  </section>
+    
+		<!-- Videos Carousel -->
+		<section class="timeline">
+			<div class="title-wrapper">
+			  <div class="icon-box">
+				<ion-icon name="videocam-outline"></ion-icon>
+			  </div>
+			  <h3 class="h3">Video Demos</h3>
+			</div>
+			<div class="carousel">
+			  <button onclick="scrollCarousel(-1, 'video-carousel-fez')">&#10094;</button>
+			  <div id="video-carousel-fez" class="carousel-track">
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/6P9a_AUiK2o
+		" frameborder="0" allowfullscreen></iframe>
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/zQDaTWbNo50" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			  <button onclick="scrollCarousel(1, 'video-carousel-fez')">&#10095;</button>
+			</div>
+		  </section>
+		
+        <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+		  
+          
+
+        </section>
+		<div id="project-modal" class="modal-container">
+			<div class="overlay" onclick="closeProjectModal()"></div>
+			<section class="testimonials-modal" style="max-width: 800px;">
+
+				<button class="modal-close-btn" onclick="closeProjectModal()">
+					<ion-icon name="close-outline"></ion-icon>
+				</button>
+
+				<div class="modal-content" id="project-modal-content">
+		  <!-- Will be dynamically inserted -->
+				</div>
+
+			</section>
+		</div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+function scrollCarousel(direction, id) {
+  const track = document.getElementById(id);
+  const scrollAmount = track.offsetWidth;
+  track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+</script>
+
+</body>
+
+</html>
